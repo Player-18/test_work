@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-work"
+version = "0.1.0"
+description = ""
+authors = ["Misha Trofimov <mikevlg34@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standart"], version = "^0.115.12"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.40"}
+pydantic = {extras = ["email"], version = "^2.11.2"}
+alembic = "^1.15.2"
+websockets = "^15.0.1"
+asyncpg = "^0.30.0"
+pydantic-settings = "^2.8.1"
+uvicorn = "^0.34.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
